@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        iframe {
+            height: 600px !important;
+        }
+    </style>
+</head>
+<body>
+<div style="display: flex; flex-direction: column; align-items: center; height: 800px">
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for AAPL</span></a> by TradingView</div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+            {
+                "interval": "1m",
+                "width": "1000",
+                "isTransparent": false,
+                "height": "1000",
+                "symbol": "NASDAQ:AAPL",
+                "showIntervalTabs": true,
+                "locale": "en",
+                "colorTheme": "light"
+            }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+
